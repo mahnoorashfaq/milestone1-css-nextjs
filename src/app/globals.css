@@ -441,7 +441,7 @@ color: orange;
 }
 @media (max-width:619px) {
     #menu{
-        height: 190vh;
+        height: max-content;
     }
 }
 @media (max-width:582px) {
@@ -495,9 +495,6 @@ color: orange;
     .right-about p{
         font-size: 10px;
         padding-top: 10px;
-    }
-    #menu{
-        height: 185vh;
     }
     .menu-container h2 {
         font-size: 36px;
@@ -608,9 +605,7 @@ color: orange;
         font-size: 8px;
         padding-top: 8px;
     }
-    #menu{
-        height: 175vh;
-    }
+    
     .menu-container h2 {
         font-size: 34px;
     }
@@ -717,9 +712,7 @@ color: orange;
         font-size: 7px;
         padding-top: 8px;
     }
-    #menu{
-        height: 160vh;
-    }
+   
     .menu-container h2 {
         font-size: 31px;
     }
@@ -827,9 +820,7 @@ color: orange;
         font-size: 6px;
         padding-top: 7px;
     }
-    #menu{
-        height: 140vh;
-    }
+  
     .menu-container h2 {
         font-size: 30px;
     }
