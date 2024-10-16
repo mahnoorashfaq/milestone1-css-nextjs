@@ -1,0 +1,889 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: Poppins;
+}
+/*Header Css*/
+.header-container{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container span{
+    color: orange;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+.nav-container {
+    display: flex;
+    font-size: 20px;
+    gap: 35px;
+    padding-right: 50px;
+}
+.nav-container :hover {
+    color: orange;
+}
+.hamburger {
+    font-size: 30px;
+    display: none;
+}
+/*Hero Css*/
+.Hero-container{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)) ,url(food.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 60vh;
+width: 100%;
+}
+.inner-hero{
+  padding-top: 150px;
+  padding-left: 100px ;
+}
+.inner-hero h2 {
+  font-size: 50px;
+}
+.inner-hero p{
+    font-size: 18px;
+    color: white;
+    width: 50%;
+}
+.Hero-container button{
+ background-color: orange;
+ border: 2px solid white;
+  height: 40px;
+  width: 100px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Hero-container button:hover{
+    background-color: white;
+    border: 2px solid orange;
+    color: orange;
+}
+/*About Css*/
+#about{
+    height: 60vh;
+    width: 100%;
+    background-color: orange;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#about h2{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+.image-about{
+    height: 350px;
+    width: 350px;
+    background-image: url(steak.jpeg);
+    background-size: cover;
+    background-position: center right;
+    border: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.inner-about{
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+    padding-top: 50px;
+    gap: 50px;
+    align-items: center;
+}
+.right-about{
+    width: 40%;
+    object-fit: cover;
+}
+.right-about h4{
+    font-size: 30px;
+    color: black;
+}
+.right-about p{
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+    padding-top: 10px;
+}
+/*Menu Css*/
+#menu{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(menu.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-container {
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient( to right, rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+}   
+.menu-container h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.menu-item{
+    height: 370px;
+    width: 300px;
+    background-color:orange;
+    align-items: center;
+    animation: bounce-in-right 2s both;
+}
+@keyframes bounce-in-right {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: translateX(32px);
+            transform: translateX(32px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }}
+.menu-item p{
+    font-size: 25px;
+    color: black;
+    padding-top: 12px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+.menu-item button{
+    font-size: 15px;
+    color: black;
+    height: 30px;
+    width: 100px;
+    background-color: orange;
+    border: 2px solid black;
+    margin-left: 15px;
+    margin-top: 9px;
+}
+.menu-img1{
+    height: 250px;
+    width: 300px;
+    background-image: url(biryani.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.menu-img2{
+    height: 250px;
+    width: 300px;
+    background-image: url(karhai.webp);
+    background-size: cover;
+    background-position: center left;
+}
+.menu-img3{
+    height: 250px;
+    width: 300px;
+    background-image: url(tikka.webp);
+    background-size: cover;
+    background-position: center;
+}
+.menu-img4{
+    height: 250px;
+    width: 300px;
+    background-image: url(steak.jpeg);
+    background-size: cover;
+    background-position: center right;
+}
+.menu-more {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    background-color: orange;
+    border: 2px solid white;
+}
+/*Footer Css*/
+.footer-container {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;   
+}
+.footer-container h3 {
+    font-size: 25px;
+    text-align: center;
+}
+.footer-icon {
+    font-size: 20px;
+display: flex;
+justify-content: center;
+gap: 30px; ;
+padding-top: 10px;
+}
+.footer-icon :hover {
+color: orange;
+}
+.footer-label{
+    height: 40px;
+    width: 100%;
+    background-color: orange;
+ font-size: 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.footer-label p{
+ color: black;
+}
+/*Media Query*/
+@media (max-width:1349px) {
+#menu{
+    height: 120vh;
+}
+}
+@media (max-width:1200px) {
+    .inner-about{
+        padding-top: 30px;
+    }
+    }
+@media (max-width:1050px) {
+        .inner-about{
+            padding-top: 20px;
+            gap: 30px;
+        }
+        .right-about{
+            width: 50%;
+        }
+}
+@media (max-width:959px) {
+    .Hero-container{
+        height: 50vh;
+        }
+    .inner-hero{
+        padding-top: 100px;
+        padding-left: 80px ;
+      }
+      .inner-hero p{
+          font-size: 18px;
+          width: 60%;
+      }
+    #about{
+        height: max-content;
+    }
+    .right-about{
+        width: 90%;
+    }
+}
+@media (max-width:900px) {
+    .logo{
+        font-size: 35px;
+    }
+    .nav-container {
+        font-size: 18px;
+        gap: 30px;
+    }
+    .Hero-container{
+        height: 40vh;
+        }
+    .inner-hero{
+        padding-top: 100px;
+        padding-left: 70px ;
+      }
+      .inner-hero h2 {
+        font-size: 45px;
+      }
+      .inner-hero p{
+          font-size: 15px;
+          width: 80%;
+      }
+      .Hero-container button{
+        height: 35px;
+        width: 90px;
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .image-about{
+        height: 300px;
+        width: 300px;
+    }
+    #about h2{
+        font-size: 38px;
+    }
+    .right-about h4{
+        font-size: 28px;
+    }
+    .right-about p{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .menu-container h2 {
+        font-size: 38px;
+    }
+    .menu-item{
+        height: 340px;
+        width: 300px;
+        background-color:orange;
+        align-items: center;
+    }
+    .menu-item p{
+        font-size: 23px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+    .menu-item button{
+        font-size: 13px;
+        height: 28px;
+        width: 95px;
+        margin-top: 8px;
+    }
+    .menu-img1{
+        height: 230px;
+        width: 300px;
+    }
+    .menu-img2{
+        height: 230px;
+        width: 300px;
+    }
+    .menu-img3{
+        height: 230px;
+        width: 300px;
+    }
+    .menu-img4{
+        height: 230px;
+        width: 300px;
+    }
+    .menu-more {
+        height: 38px;
+        width: 95px;
+        font-size: 13px;
+    }
+}
+@media (max-width:800px) {
+    .inner-hero{
+        padding-top: 90px;
+        padding-left: 50px ;
+      }
+}
+@media (max-width:649px) {
+    .box-container {
+        gap: 20px;
+    }
+    .inner-hero{
+        padding-top: 80px;
+        padding-left: 15px ;
+      }
+}
+@media (max-width:619px) {
+    #menu{
+        height: 190vh;
+    }
+}
+@media (max-width:582px) {
+    .logo{
+        font-size: 33px;
+        padding-left: 30px;
+    }
+    .nav-container {
+        font-size: 15px;
+        gap: 25px;
+        padding-right: 30px;
+    }
+    .inner-hero{
+        padding-left: 15px ;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+    .Hero-container{
+        height:max-content;
+        }
+      .inner-hero h2 {
+        font-size: 40px;
+      }
+      .inner-hero p{
+          font-size: 13px;
+          width: 80%;
+      }
+      .Hero-container button{
+        height: 30px;
+        width: 80px;
+        margin-top: 8px;
+        font-size: 10px;
+      }
+      .image-about{
+        height: 250px;
+        width: 250px;
+    }
+    #about{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    #about h2{
+        font-size: 34px;
+    }
+    .right-about{
+        width: 100%;
+    }
+    .right-about h4{
+        font-size: 23px;
+    }
+    .right-about p{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    #menu{
+        height: 185vh;
+    }
+    .menu-container h2 {
+        font-size: 36px;
+    }
+    .menu-item{
+        height: 320px;
+        width: 300px;
+        background-color:orange;
+        align-items: center;
+    }
+    .menu-item p{
+        font-size: 20px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+    .menu-item button{
+        font-size: 11px;
+        height: 26px;
+        width: 90px;
+        margin-top: 8px;
+    }
+    .menu-img1{
+        height: 215px;
+        width: 300px;
+    }
+    .menu-img2{
+        height: 215px;
+        width: 300px;
+    }
+    .menu-img3{
+        height: 215px;
+        width: 300px;
+    }
+    .menu-img4{
+        height: 215px;
+        width: 300px;
+    }
+    .menu-more {
+        height: 36px;
+        width: 90px;
+        font-size: 12px;
+    }
+    .footer-container {
+        height: 90px;  
+    }
+    .footer-container h3 {
+        font-size: 22px;
+    }
+    .footer-icon {
+        font-size: 18px;
+    gap: 30px; ;
+    padding-top: 10px;
+    }
+    .footer-label{
+        height: 40px;
+     font-size: 12px;
+    }
+}
+@media (max-width:450px) {
+    .logo{
+        font-size: 31px;
+        padding-left: 20px;
+    }
+    .nav-container {
+        font-size: 13px;
+        gap: 20px;
+        padding-right: 20px;
+    }
+    .inner-hero{
+        padding-left: 15px ;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+    .Hero-container{
+        height:max-content;
+        }
+      .inner-hero h2 {
+        font-size: 35px;
+      }
+      .inner-hero p{
+          font-size: 10px;
+          width: 80%;
+      }
+      .Hero-container button{
+        height: 25px;
+        width: 70px;
+        margin-top: 8px;
+        font-size: 8px;
+      }
+      .image-about{
+        height: 200px;
+        width: 200px;
+    }
+    #about{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #about h2{
+        font-size: 30px;
+    }
+    .right-about{
+        width: 100%;
+    }
+    .right-about h4{
+        font-size: 20px;
+    }
+    .right-about p{
+        font-size: 8px;
+        padding-top: 8px;
+    }
+    #menu{
+        height: 175vh;
+    }
+    .menu-container h2 {
+        font-size: 34px;
+    }
+    .menu-item{
+        height: 300px;
+        width: 280px;
+        background-color:orange;
+        align-items: center;
+    }
+    .menu-item p{
+        font-size: 20px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+    .menu-item button{
+        font-size: 9px;
+        height: 23px;
+        width: 80px;
+        margin-top: 8px;
+    }
+    .menu-img1{
+        height: 200px;
+        width: 280px;
+    }
+    .menu-img2{
+        height: 200px;
+        width: 280px;
+    }
+    .menu-img3{
+        height: 200px;
+        width: 280px;
+    }
+    .menu-img4{
+        height: 200px;
+        width: 280px;
+    }
+    .menu-more {
+        height: 34px;
+        width: 80px;
+        font-size: 11px;
+    }
+    .footer-container {
+        height: 90px;  
+    }
+    .footer-container h3 {
+        font-size: 22px;
+    }
+    .footer-icon {
+        font-size: 18px;
+    gap: 30px; ;
+    padding-top: 10px;
+    }
+    .footer-label{
+        height: 40px;
+     font-size: 12px;
+    }
+}
+@media (max-width:380px) {
+    .logo{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .nav-container {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .inner-hero{
+        padding-left: 15px ;
+      }
+    .Hero-container{
+        height:max-content;
+        }
+      .inner-hero h2 {
+        font-size: 32px;
+      }
+      .inner-hero p{
+          font-size: 9px;
+          width: 80%;
+      }
+      .Hero-container button{
+        height: 22px;
+        width: 60px;
+        margin-top: 7px;
+        font-size: 7px;
+      }
+      .image-about{
+        height: 180px;
+        width: 180px;
+    }
+    #about{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #about h2{
+        font-size: 27px;
+    }
+    .right-about{
+        width: 100%;
+    }
+    .right-about h4{
+        font-size: 18px;
+    }
+    .right-about p{
+        font-size: 7px;
+        padding-top: 8px;
+    }
+    #menu{
+        height: 160vh;
+    }
+    .menu-container h2 {
+        font-size: 31px;
+    }
+    .menu-item{
+        height: 270px;
+        width: 250px;
+        background-color:orange;
+        align-items: center;
+    }
+    .menu-item p{
+        font-size: 18px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+    .menu-item button{
+        font-size: 8px;
+        height: 21px;
+        width: 65px;
+        margin-top: 7px;
+    }
+    .menu-img1{
+        height: 180px;
+        width: 250px;
+    }
+    .menu-img2{
+        height: 180px;
+        width: 250px;
+    }
+    .menu-img3{
+        height: 180px;
+        width: 250px;
+    }
+    .menu-img4{
+        height: 180px;
+        width: 250px;
+    }
+    .menu-more {
+        height: 30px;
+        width: 70px;
+        font-size: 10px;
+    }
+    .footer-container {
+        height: 80px;  
+    }
+    .footer-container h3 {
+        font-size: 20px;
+    }
+    .footer-icon {
+        font-size: 16px;
+    gap: 20px; ;
+    padding-top: 10px;
+    }
+    .footer-label{
+        height: 30px;
+     font-size: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .logo{
+        font-size: 28px;
+        padding-left: 10px;
+    }
+    .nav-container {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    .inner-hero{
+        padding-left: 10px ;
+      }
+    .Hero-container{
+        height:max-content;
+        }
+      .inner-hero h2 {
+        font-size: 30px;
+      }
+      .inner-hero p{
+          font-size: 8px;
+          width: 80%;
+      }
+      .Hero-container button{
+        height: 20px;
+        width: 50px;
+        margin-top: 6px;
+        font-size: 6px;
+      }
+      .image-about{
+        height: 160px;
+        width: 160px;
+    }
+    #about{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #about h2{
+        font-size: 25px;
+    }
+    .right-about{
+        width: 100%;
+    }
+    .right-about h4{
+        font-size: 16px;
+    }
+    .right-about p{
+        font-size: 6px;
+        padding-top: 7px;
+    }
+    #menu{
+        height: 140vh;
+    }
+    .menu-container h2 {
+        font-size: 30px;
+    }
+    .menu-item{
+        height: 230px;
+        width: 225px;
+        background-color:orange;
+        align-items: center;
+    }
+    .menu-item p{
+        font-size: 16px;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+    .menu-item button{
+        font-size: 7px;
+        height: 19px;
+        width: 60px;
+        margin-top: 6px;
+    }
+    .menu-img1{
+        height: 150px;
+        width: 225px;
+    }
+    .menu-img2{
+        height: 150px;
+        width: 225px;
+    }
+    .menu-img3{
+        height: 150px;
+        width: 225px;
+    }
+    .menu-img4{
+        height: 150px;
+        width: 225px;
+    }
+    .menu-more {
+        height: 28;
+        width: 65px;
+        font-size: 9px;
+    }
+    .footer-container {
+        height: 70px;  
+    }
+    .footer-container h3 {
+        font-size: 18px;
+    }
+    .footer-icon {
+        font-size: 14px;
+    gap: 18px; ;
+    padding-top: 8px;
+    }
+    .footer-label{
+        height: 25px;
+     font-size: 9px;
+    }
+}
